@@ -2,9 +2,11 @@
   <div><span>id: </span>{{hero.id}}</div>
   <div>
     <label>name:
-      <input [(ngModel)]="hero.name" placeholder="name">
+      <input [(ngModel)]="hero.name" placeholder="name" (keyup.enter)="save()">
     </label>
   </div>
 
   <button (click)="goBack()">go back</button>
   <button (click)="save()">save</button>
+
+  <app-hero-form></app-hero-form>

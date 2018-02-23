@@ -14,6 +14,18 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 19, name: 'Quicksilver' },
       { id: 20, name: 'Human Torch' }
     ];
-    return {heroes};
+    const powers = [
+      'Stretch body parts',
+      'Spider sense',
+      'I\'m Batman',
+      'Omnipotent',
+      'Talks with fishes',
+      'Shrink',
+      'Amazonian',
+      'Paranormal powers',
+      'Move fast',
+      'Can set self on fire and control flames'
+    ];
+    return {heroes, powers};
   }
 }
